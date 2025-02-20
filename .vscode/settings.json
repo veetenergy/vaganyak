@@ -1,0 +1,20 @@
+{
+    "dbcode.connections": [
+        {
+            "connectionId": "qqqDsIpwn0iUFoRTha8KX",
+            "name": "veeetnergy",
+            "driver": "mysql",
+            "connectionType": "host",
+            "host": "147.45.184.12",
+            "port": 3306,
+            "ssl": false,
+            "username": "1_Malhasyan",
+            "password": "7gMnz9aMSCenJq76",
+            "savePassword": "yes",
+            "connectionTimeout": 30,
+            "driverOptions": {
+                "retrievePublickey": true
+            }
+        }
+    ]
+}
