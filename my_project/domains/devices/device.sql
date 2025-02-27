@@ -1,0 +1,11 @@
+CREATE TABLE device (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,  -- Приводим тип к BIGINT
+    name VARCHAR(255) NOT NULL,
+    category_id INT NOT NULL,
+    brand_id INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    stock_quantity INT NOT NULL,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
