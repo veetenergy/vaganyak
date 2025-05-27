@@ -1,0 +1,67 @@
+#№1
+a = 7
+b = -4
+c = 3
+
+print(a, b, c)
+#№2
+a = 7
+b = -4
+c = 3
+
+print(a, b, c, sep="\n")
+#№3
+s1 = "Hello"
+s2 = "Balakirev"
+
+print(s1, end=" ")
+print(s2)
+#№4
+# ввод данных
+s1, s2 = map(str.strip, input().split())
+
+# здесь продолжите программу
+print(f"Word 1: {s1} | Word 2: {s2}")
+#№5
+
+a, b = map(int, input().split())
+
+result = a ** b
+
+print(result)
+#№6
+
+a, b = map(float, input().split())
+
+result = a + b
+
+print(result)
+#№7
+
+X, Y = map(int, input().split())
+
+
+black = 2 * X
+red = 4 * Y
+
+total = X + Y + black + red
+
+print(total)
+#№8
+
+length = float(input())
+width = float(input())
+
+perimeter = 2 * (length + width)
+
+
+print(perimeter)
+#№9
+import math
+
+print(f"{math.pi:.3f}")
+#№10
+
+num = float(input())
+
+print("Вы ввели число", num)

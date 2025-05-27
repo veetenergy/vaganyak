@@ -1,0 +1,65 @@
+#№1
+# ввод целого числа
+d = int(input())
+
+# здесь продолжите программу
+print(abs(d))
+#№2
+# ввод целого числа
+d1, d2, d3, d4, d5 = map(int, input().split())
+
+# здесь продолжите программу
+min_value = min(d1, d2, d3, d4, d5)
+
+print(min_value)
+#№3
+# ввод целого числа
+d1, d2, d3, d4, d5 = map(int, input().split())
+
+# здесь продолжите программу
+max_value = max(d1, d2, d3, d4, d5)
+
+print(max_value)
+#№4
+# ввод данных
+a, b = map(int, input().split())
+
+# здесь продолжите программу
+import math
+distance = math.sqrt(a**2 + b**2)
+
+distance_rounded = round(distance, 2)
+
+print(distance_rounded)
+#№5
+# ввод данных
+n, k = map(int, input().split())
+
+# здесь продолжите программу
+
+from math import factorial
+
+combinations = factorial(n) // (factorial(k) * factorial(n - k))
+
+print(combinations)
+#№6
+# ввод данных
+n, m = map(int, input().split())
+
+# здесь продолжите программу
+total = n + m
+
+
+buses = (total + 19) // 20 
+
+print(buses)
+#№7
+# ввод данных
+x = int(input())
+
+# здесь продолжите программу
+discounted_price = x * 0.9
+
+max_count = int(500 // discounted_price)
+
+print(max_count)
