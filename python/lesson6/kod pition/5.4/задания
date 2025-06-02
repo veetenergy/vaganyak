@@ -1,0 +1,80 @@
+#№1
+
+s = input()
+indices = []
+start = 0
+
+while True:
+    pos = s.find("ра", start)
+    if pos == -1:
+        break
+    indices.append(pos)
+    start = pos + 1
+
+if indices:
+    print(*indices)
+else:
+    print(-1)
+#№2
+import re
+
+phone = input()
+
+pattern = r'^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$'
+
+if re.match(pattern, phone):
+    print("ДА")
+else:
+    print("НЕТ")
+#№3
+expr = input().replace(' ', '')  
+
+result = 0
+num = ''
+sign = 1
+
+for ch in expr:
+    if ch.isdigit():
+        num += ch
+    else:
+        if num != '':
+            result += sign * int(num)
+            num = ''
+        sign = 1 if ch == '+' else -1
+
+if num != '':
+    result += sign * int(num)
+
+print(result)
+#№4
+nums = list(map(int, input().split()))
+
+for i, val in enumerate(nums):
+    nums[i] = val ** 2
+
+print(*nums)
+#№5
+nums = list(map(int, input().split()))
+
+result = []
+for num in nums:
+    result.extend([num, num])
+
+print(*result)
+#№6
+numbers = list(map(float, input().split()))
+
+min_num = numbers[0]
+for num in numbers:
+    if num < min_num:
+        min_num = num
+
+print(min_num)
+#№7
+numbers = list(map(float, input().split()))
+
+for i, val in enumerate(numbers):
+    if val < 0:
+        numbers[i] = -1.0
+
+print(*numbers)

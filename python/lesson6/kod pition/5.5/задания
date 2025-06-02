@@ -1,0 +1,24 @@
+#№1
+cities = input().split()
+it = iter(cities)
+
+print(next(it))
+print(next(it))
+#№2
+
+s = input()
+it = iter(s)
+
+while True:
+    ch = next(it)
+    if ch == ' ':
+        break
+    print(ch, end='')
+
+#№3
+
+n = input()  
+it = iter(n)
+
+for digit in it:
+    print(digit, end=' ')

@@ -1,0 +1,105 @@
+#№1
+
+p = [0] * 10
+count = 0
+
+while count < 5:
+    i = int(input())
+    if p[i] == 1:
+        continue
+    p[i] = 1
+    count += 1
+
+print(*p)
+#№2
+product = 1
+
+while True:
+    n = int(input())
+    if n == 0:
+        break
+    if n <= 0:
+        continue
+    product *= n
+
+print(product)
+#№3
+cities = input().split()
+
+i = 0
+result = "ДА"
+
+while i < len(cities):
+    if len(cities[i]) <= 5:
+        result = "НЕТ"
+        break
+    i += 1
+
+print(result)
+
+#№4
+names = input().split()
+
+i = 0
+result = "НЕТ"
+
+while i < len(names):
+    name = names[i].lower()
+    if name[0] == name[-1]:
+        result = "ДА"
+        break
+    i += 1
+
+print(result)
+
+
+#№5
+n = int(input())
+
+if n >= 100:
+    print("слишком большое значение n")
+else:
+    i = 1
+    multiples = []
+    while i <= n:
+        if i % 3 == 0 and i % 5 == 0:
+            multiples.append(str(i))
+        i += 1
+    else:
+        print(' '.join(multiples))
+#№6
+n = int(input())
+i = 1
+
+while i * i <= n:
+    i += 1
+
+print(i)
+#№7
+
+x = int(input())
+day = 1
+distance = 10.0
+
+while distance <= x:
+    distance *= 1.1
+    day += 1
+
+print(day)
+
+#№8
+import sys
+
+
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+
+
+i = 0
+while i < len(lst_in):
+    if len(lst_in[i].split()) >= 2:
+        lst_in.pop(i)
+    else:
+        i += 1
+
+print(*lst_in)
+
