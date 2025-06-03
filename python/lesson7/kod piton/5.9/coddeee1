@@ -1,0 +1,49 @@
+#№1
+import sys
+
+s = sys.stdin.readlines()
+lst_in = [list(map(int, x.strip().split())) for x in s]
+
+
+lst_out = [elem for row in lst_in[::-1] for elem in row[::-1]]
+
+print(*lst_out)
+#№2
+import math
+
+
+nums = list(map(int, input().split()))
+
+
+N = int(math.sqrt(len(nums)))
+
+
+lst = [nums[i * N:(i + 1) * N] for i in range(N)]
+
+print(lst)
+#№3
+t = ["– Скажи-ка, дядя, ведь не даром",
+     "Я Python выучил с каналом",
+     "Балакирев что раздавал?",
+     "Ведь были ж заданья боевые,",
+     "Да, говорят, еще какие!",
+     "Недаром помнит вся Россия",
+     "Как мы рубили их тогда!"
+    ]
+
+lst = [[word for word in line.split() if len(word) > 3] for line in t]
+
+print(lst)
+#№4
+import sys
+
+s = sys.stdin.readlines()
+lst_in = [list(map(int, x.strip().split())) for x in s]
+
+
+cols = len(lst_in[0])
+
+A = [[lst_in[row][col] for row in range(len(lst_in))] for col in range(cols)]
+
+for row in A:
+    print(*row)
